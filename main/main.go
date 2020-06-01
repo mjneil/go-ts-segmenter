@@ -4,9 +4,9 @@ import (
 	"flag"
 	"net/http"
 
-	"github.com/jordicenzano/go-ts-segmenter/manifestgenerator"
-	"github.com/jordicenzano/go-ts-segmenter/manifestgenerator/hls"
-	"github.com/jordicenzano/go-ts-segmenter/manifestgenerator/mediachunk"
+	"github.com/mjneil/go-ts-segmenter/manifestgenerator"
+	"github.com/mjneil/go-ts-segmenter/manifestgenerator/hls"
+	"github.com/mjneil/go-ts-segmenter/manifestgenerator/mediachunk"
 	"github.com/sirupsen/logrus"
 
 	"bufio"

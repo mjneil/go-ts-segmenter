@@ -1,3 +1,4 @@
+export GO111MODULE = on
 ifeq ($(shell uname),Darwin)
 	BINDIR = binaries/darwin
 else ifeq ($(shell uname),Linux)
@@ -10,10 +11,6 @@ LDFLAGS = -ldflags "-X main.gitSHA=$(shell git rev-parse HEAD)"
 
 .PHONY: all
 all: build test
-
-.PHONY: install-deps
-install-deps:
-	glide install
 
 .PHONY: build
 build:
